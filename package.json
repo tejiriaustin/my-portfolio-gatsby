@@ -2,6 +2,11 @@
   "name": "my-portfolio-gatsby",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "Please Use Yarn!"
+  },
   "description": "my-portfolio-gatsby",
   "author": "Tejiri",
   "keywords": [

@@ -1,5 +1,5 @@
-import * as React from "react";
-import type { HeadFC } from "gatsby";
+import * as React from 'react';
+import type { HeadFC } from 'gatsby';
 
 const IndexPage = () => {
   return <main>Hello There, I'm Tejiri Odiase</main>;

@@ -1,0 +1,29 @@
+@import url('//fonts.googleapis.com/css?family=Lato:400,700');
+
+
+$main-text: #3333;
+$muted-text: #0000;
+$theme-color: #EBF6FC;
+
+@font-face {
+    font-family: sora-thin;
+    src: url(assets/fonts/sora-light-webfont.woff)format("woff"),
+    url(assets/fonts/sora-light-webfont.woff2)format("woff2");
+}
+
+@font-face {
+    font-family: sora-light;
+    src: url(assets/fonts/sora-light-webfont.woff)format("woff"),
+    url(assets/fonts/sora-light-webfont.woff2)format("woff2");
+}
+
+@font-face {
+    font-family: sora-extra-light;
+    src: url(assets/fonts/sora-extralight-webfont.woff)format('woff'),
+    url(assets/fonts/sora-extrabold-webfont.woff2)format('woff2');
+}
+
+@font-face {
+    font-family: sora-thick;
+    src: url(assets/fonts/sora-bold-webfont.woff)format('woff');
+}

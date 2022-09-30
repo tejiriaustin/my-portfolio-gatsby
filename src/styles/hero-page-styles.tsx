@@ -6,7 +6,6 @@ const Hero = styled.div`
 `;
 
 const HeroNavBar = styled.nav`
-  font-family: 'Sora';
   display: flex;
   margin: 0 auto;
   width: 80%;
@@ -33,7 +32,6 @@ const HeroNavBarItem = styled.li`
 `;
 
 const HeroName = styled.p`
-  font-family: 'Sora';
   font-weight: 100;
   font-size: 170px;
   width: 60%;
@@ -42,7 +40,6 @@ const HeroName = styled.p`
 `;
 
 const HeroTitle = styled.div`
-  font-family: 'Sora';
   font-weight: 700;
   font-size: 50px;
 `;

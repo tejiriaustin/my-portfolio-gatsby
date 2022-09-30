@@ -5,4 +5,7 @@ export const FontStyles = createGlobalStyle`
         font-family: 'Sora Regular';
         src: url(https://fonts.googleapis.com);
     }
+    html{
+        font-family: 'Sora', sans-serif;
+    }
 `;

@@ -9,7 +9,6 @@ const AboutMeMainStyle = styled.div`
 `;
 
 const AboutMeHeader = styled.p`
-  font-family: 'Sora', sans-serif;
   font-weight: 700;
   letter-spacing: 15px;
   font-size: 27px;
@@ -18,7 +17,6 @@ const AboutMeHeader = styled.p`
 `;
 
 const AboutMeParagraphOne = styled.p`
-  font-family: 'Sora', sans-serif;
   font-weight: 400;
   font-size: 40px;
   width: 70%;
@@ -27,7 +25,6 @@ const AboutMeParagraphOne = styled.p`
 `;
 
 const AboutMeParagraphTwo = styled.p`
-  font-family: 'Sora', sans-serif;
   font-weight: 400;
   width: 70%;
   font-size: 40px;

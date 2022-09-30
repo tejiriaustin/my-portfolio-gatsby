@@ -8,7 +8,6 @@ const FooterSection = styled.div`
 const FooterHead = styled.div`
   text-align: center;
   font-size: 30px;
-  font-family: 'Sora';
   font-weight: 500;
   letter-spacing: 10px;
   padding: 10px;
@@ -16,7 +15,6 @@ const FooterHead = styled.div`
 `;
 
 const FooterBody = styled.div`
-  font-family: 'Sora';
   font-weight: 200;
   font-size: 30px;
   letter-spacing: 3px;

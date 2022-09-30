@@ -7,7 +7,6 @@ const PortfolioStyle = styled.div`
 
 const PortfolioHeaderStyle = styled.div`
   text-align: center;
-  font-family: 'Sora';
   font-size: 27px;
   font-weight: 700;
   letter-spacing: 15px;

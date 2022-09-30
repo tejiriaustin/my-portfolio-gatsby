@@ -1,12 +1,21 @@
 import React from 'react';
-import { FooterBody, FooterHead, FooterSection } from '../styles/footer-styles';
+import {
+  FooterBody,
+  FooterHead,
+  FooterImageSection,
+  FooterSection,
+  FooterTextSection,
+} from '../styles/footer-styles';
 
 const Footer = () => {
   return (
     <FooterSection>
       <FooterHead>CONTACT ME</FooterHead>
       <FooterBody>
-        LET’S GET THE NEXT BIG THING UP AND RUNNING, TOGETHER
+        <FooterTextSection>
+          LET’S GET THE NEXT BIG THING UP AND RUNNING, TOGETHER
+        </FooterTextSection>
+        <FooterImageSection></FooterImageSection>
       </FooterBody>
     </FooterSection>
   );

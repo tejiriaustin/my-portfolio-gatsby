@@ -48,6 +48,7 @@ const HeroTitle = styled.div`
 `;
 
 const Languages = styled.div`
+  font-family: 'Sora';
   margin-top: 2%;
   letter-spacing: 10px;
   font-weight: 100;

@@ -1,6 +1,9 @@
 import React from 'react';
+import { HeroImage } from '../assets/images/hero-image';
 import {
   Hero,
+  HeroGeneral,
+  HeroImageStyle,
   HeroLogo,
   HeroName,
   HeroNavBar,
@@ -25,11 +28,17 @@ const HeroPage = () => {
           <HeroNavBarItem>contact me</HeroNavBarItem>
         </HeroNavBarItems>
       </HeroNavBar>
-      <HeroName>
-        ODIASE TEJIRI
-        <HeroTitle>software engineer</HeroTitle>
-        <Languages>GOLANG, FLUTTER</Languages>
-      </HeroName>
+
+      <HeroGeneral>
+        <HeroName>
+          ODIASE TEJIRI
+          <HeroTitle>software engineer</HeroTitle>
+          <Languages>GOLANG, FLUTTER</Languages>
+        </HeroName>
+        <HeroImageStyle>
+          <HeroImage />
+        </HeroImageStyle>
+      </HeroGeneral>
     </Hero>
   );
 };

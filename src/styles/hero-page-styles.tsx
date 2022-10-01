@@ -31,11 +31,15 @@ const HeroNavBarItem = styled.li`
   padding: 10px 20px;
 `;
 
+const HeroGeneral = styled.div`
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+`;
 const HeroName = styled.p`
   font-weight: 100;
   font-size: 170px;
-  width: 60%;
-  margin: 10%;
+  width: 50%;
   margin-top: 0%;
 `;
 
@@ -51,13 +55,21 @@ const Languages = styled.div`
   font-size: 20px;
 `;
 
+const HeroImageStyle = styled.div`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+`;
+
 export {
   Hero,
   HeroName,
   HeroTitle,
   Languages,
+  HeroGeneral,
   HeroNavBar,
   HeroLogo,
+  HeroImageStyle,
   HeroNavBarItem,
   HeroNavBarItems,
 };

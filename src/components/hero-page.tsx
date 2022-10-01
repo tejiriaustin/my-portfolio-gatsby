@@ -1,6 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-// import HeroImage from '../assets/images/hero-image.jpg';
 import {
   Hero,
   HeroGeneral,
@@ -37,13 +36,12 @@ const HeroPage = () => {
           <Languages>GOLANG, FLUTTER</Languages>
         </HeroName>
         <HeroImageStyle>
-          {/* <HeroImage /> */}
           <StaticImage
             src="../assets/images/hero-image.jpg"
             alt="A stuff"
             placeholder="blurred"
+            width={450}
           />
-          {/* <img src={HeroImage} alt="r" /> */}
         </HeroImageStyle>
       </HeroGeneral>
     </Hero>

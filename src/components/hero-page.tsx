@@ -13,10 +13,6 @@ import {
   Languages,
 } from '../styles/hero-page-styles';
 
-const HeroNavbar = () => {
-  return <HeroNavBar>Odiase Tejiri</HeroNavBar>;
-};
-
 const HeroPage = () => {
   return (
     <Hero>
@@ -40,7 +36,7 @@ const HeroPage = () => {
             src="../assets/images/hero-image.jpg"
             alt="A stuff"
             placeholder="blurred"
-            width={450}
+            width={500}
           />
         </HeroImageStyle>
       </HeroGeneral>

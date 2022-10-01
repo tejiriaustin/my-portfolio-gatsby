@@ -14,12 +14,12 @@ const HeroNavBar = styled.nav`
 
 const HeroLogo = styled.p`
   font-weight: 700;
-  font-size: 25px;
+  font-size: 1.6rem;
 `;
 
 const HeroNavBarItems = styled.ul`
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
 `;
 
@@ -38,7 +38,7 @@ const HeroGeneral = styled.div`
 `;
 const HeroName = styled.p`
   font-weight: 100;
-  font-size: 170px;
+  font-size: 11rem;
   width: 50%;
   margin: 0;
   padding: 0;
@@ -46,14 +46,14 @@ const HeroName = styled.p`
 
 const HeroTitle = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.125rem;
 `;
 
 const Languages = styled.div`
   margin-top: 2%;
   letter-spacing: 10px;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1.25rem;
 `;
 
 const HeroImageStyle = styled.div`

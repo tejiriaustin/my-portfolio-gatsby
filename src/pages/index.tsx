@@ -17,10 +17,10 @@ const IndexPage = () => {
         rel="stylesheet"
       />
       <GlobalStyles />
-      <HeroPage></HeroPage>
-      <AboutMe></AboutMe>
-      <PortfolioCard></PortfolioCard>
-      <Footer></Footer>
+      <HeroPage />
+      <AboutMe />
+      <PortfolioCard />
+      <Footer />
     </div>
   );
 };

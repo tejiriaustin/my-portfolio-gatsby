@@ -2,7 +2,19 @@ import styled from 'styled-components';
 
 const PortfolioStyle = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    z-index: -1;
+    background: #cbe4f4;
+    box-shadow: -20px -20px 30px #d9e5ed;
+    filter: blur(20px);
+  }
 `;
 
 const PortfolioHeaderStyle = styled.div`
@@ -14,15 +26,27 @@ const PortfolioHeaderStyle = styled.div`
   margin-bottom: 15vh;
 `;
 const PortolioCardStyle = styled.div`
-  background-image: linear-gradient(#fee0ff, #fff);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.7px);
-  -webkit-backdrop-filter: blur(10.7px);
   border: 1px solid rgba(254, 224, 255, 0.44);
   width: 50vw;
   height: 50vh;
   margin: 0 auto;
+  place-items: center;
+  font-weight: 400;
+  color: #295165;
+  font-size: 2.5rem;
+  letter-spacing: 1.6rem;
+  display: grid;
+  background: linear-gradient(
+    180deg,
+    #fee0ff 0%,
+    rgba(254, 192, 255, 0) 27.08%,
+    rgba(255, 252, 255, 0.4) 90.9%
+  );
+  box-shadow: 0px 4px 15px -1px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 40px;
 `;
 
 const IconStyle = styled.img`

@@ -1,6 +1,8 @@
 import React from 'react';
 import {
   FooterBody,
+  FooterBodyBottom,
+  FooterBodyTop,
   FooterHead,
   FooterImageSection,
   FooterSection,
@@ -12,10 +14,13 @@ const Footer = () => {
     <FooterSection>
       <FooterHead>CONTACT ME</FooterHead>
       <FooterBody>
-        <FooterTextSection>
-          LET’S GET THE NEXT BIG THING UP AND RUNNING, TOGETHER
-        </FooterTextSection>
-        <FooterImageSection></FooterImageSection>
+        <FooterBodyTop>
+          <FooterTextSection>
+            LET’S GET THE NEXT BIG THING UP AND RUNNING, TOGETHER
+          </FooterTextSection>
+          <FooterImageSection />
+        </FooterBodyTop>
+        <FooterBodyBottom>tejiriaustin123@gmail.com</FooterBodyBottom>
       </FooterBody>
     </FooterSection>
   );

@@ -13,10 +13,6 @@ import {
   Languages,
 } from '../styles/hero-page-styles';
 
-const HeroNavbar = () => {
-  return <HeroNavBar>Odiase Tejiri</HeroNavBar>;
-};
-
 const HeroPage = () => {
   return (
     <Hero>

@@ -4,6 +4,7 @@ import { AboutMe } from '../components/about-me';
 import { Footer } from '../components/footer';
 import { HeroPage } from '../components/hero-page';
 import { PortfolioCard } from '../components/portfolio-card';
+import { GlobalStyles } from '../global-Styles';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet"
       />
+      <GlobalStyles />
       <HeroPage></HeroPage>
       <AboutMe></AboutMe>
       <PortfolioCard></PortfolioCard>

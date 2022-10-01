@@ -38,7 +38,7 @@ const HeroGeneral = styled.div`
 `;
 const HeroName = styled.p`
   font-weight: 100;
-  font-size: 170px;
+  font-size: 11rem;
   width: 50%;
   margin: 0;
   padding: 0;

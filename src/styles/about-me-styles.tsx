@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const AboutMeMainStyle = styled.div`
   width: 80%;
   height: 100vh;
-  font-family: monospace;
   justify-content: center;
   margin: 0 auto;
 `;

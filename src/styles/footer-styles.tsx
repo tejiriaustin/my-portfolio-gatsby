@@ -4,7 +4,6 @@ const FooterSection = styled.div`
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(#fff, #82b4ff);
 `;
 
@@ -45,7 +44,7 @@ const FooterBodyBottom = styled.div`
   font-weight: 300;
   font-size: 1.25rem;
   color: #4b668d;
-  margin: 0 auto;
+  margin: 5rem auto;
   place-items: center;
   display: grid;
   width: 70%;

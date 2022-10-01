@@ -40,7 +40,8 @@ const HeroName = styled.p`
   font-weight: 100;
   font-size: 170px;
   width: 50%;
-  margin-top: 0%;
+  margin: 0;
+  padding: 0;
 `;
 
 const HeroTitle = styled.div`

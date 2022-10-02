@@ -7,8 +7,8 @@ const PortfolioStyle = styled.div`
   &::before {
     content: '';
     position: absolute;
-    width: 30em;
-    height: 30em;
+    width: 20em;
+    height: 20em;
     border-radius: 50%;
     z-index: -1;
     background: #cbe4f4;
@@ -19,12 +19,13 @@ const PortfolioStyle = styled.div`
 
 const PortfolioHeaderStyle = styled.div`
   text-align: center;
-  font-size: 27px;
+  font-size: calc(15px + (27 - 15) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
   letter-spacing: 15px;
   color: #295165;
   margin-bottom: 15vh;
 `;
+
 const PortolioCardStyle = styled.div`
   border: 1px solid rgba(254, 224, 255, 0.44);
   width: 50vw;
@@ -33,7 +34,7 @@ const PortolioCardStyle = styled.div`
   place-items: center;
   font-weight: 400;
   color: #295165;
-  font-size: 2.5rem;
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 1.6rem;
   display: grid;
   background: linear-gradient(

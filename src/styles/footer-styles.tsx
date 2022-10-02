@@ -9,7 +9,7 @@ const FooterSection = styled.div`
 
 const FooterHead = styled.div`
   text-align: center;
-  font-size: 30px;
+  font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 500;
   letter-spacing: 10px;
   color: #295165;
@@ -17,7 +17,7 @@ const FooterHead = styled.div`
 
 const FooterBody = styled.div`
   font-weight: 200;
-  font-size: 1.875rem;
+  font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 3px;
   width: 70%;
   height: 70vh;
@@ -42,7 +42,7 @@ const FooterBodyTop = styled.div`
 
 const FooterBodyBottom = styled.div`
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
   color: #4b668d;
   margin: 5rem auto;
   place-items: center;

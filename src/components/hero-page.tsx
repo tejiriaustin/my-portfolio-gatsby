@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Hero,
   HeroGeneral,
+  HeroImageStyle,
   HeroLogo,
   HeroName,
   HeroNavBar,
@@ -30,14 +31,16 @@ const HeroPage = () => {
           <HeroTitle>software engineer</HeroTitle>
           <Languages>GOLANG, FLUTTER</Languages>
         </HeroName>
-        <StaticImage
-          src="../assets/images/hero-image.jpg"
-          alt="A stuff"
-          sizes="(min-width: 300px) 500px,
+        <HeroImageStyle>
+          <StaticImage
+            src="../assets/images/hero-image.jpg"
+            alt="A stuff"
+            sizes="(min-width: 300px) 500px,
             800vw"
-          placeholder="blurred"
-          width={500}
-        />
+            placeholder="blurred"
+            width={500}
+          />
+        </HeroImageStyle>
       </HeroGeneral>
     </Hero>
   );

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Hero = styled.div`
-  height: 100vh;
   width: 100vw;
 `;
 
@@ -13,6 +12,8 @@ const HeroNavBar = styled.nav`
 `;
 
 const HeroLogo = styled.p`
+  width: 30%;
+  place-items: center;
   font-weight: 700;
   font-size: calc(10px + (25 - 10) * ((100vw - 300px) / (1600 - 300)));
 `;
@@ -27,8 +28,8 @@ const HeroNavBarItem = styled.li`
   text-align: center;
   margin: auto;
   list-style-type: none;
-  display: inline-block;
   padding: 10px 20px;
+  width: 30%;
 `;
 
 const HeroGeneral = styled.div`
@@ -49,9 +50,13 @@ const HeroTitle = styled.div`
   font-weight: 700;
   font-size: calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300)));
   font-size: 50;
+  margin: 0;
+  padding: 0;
 `;
 
 const Languages = styled.div`
+  margin: 0;
+  padding: 0;
   margin-top: 2%;
   letter-spacing: 10px;
   font-weight: 100;

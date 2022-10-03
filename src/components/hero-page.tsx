@@ -1,5 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
+import { gsap } from 'gsap';
+import React, { useEffect } from 'react';
 import {
   Hero,
   HeroGeneral,
@@ -14,6 +15,14 @@ import {
 } from '../styles/hero-page-styles';
 
 const HeroPage = () => {
+  useEffect(() => {
+    gsap.timeline().from(HeroLogo, 0.5, {
+      duration: 1,
+      y: -100,
+      ease: 'Bouce',
+    });
+  }, []);
+
   return (
     <Hero>
       <HeroNavBar>

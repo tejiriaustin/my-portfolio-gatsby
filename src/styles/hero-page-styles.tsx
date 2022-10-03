@@ -28,7 +28,6 @@ const HeroNavBarItems = styled.ul`
 const HeroNavBarItem = styled.li`
   list-style-type: none;
   padding: 10px 20px;
-  width: 35%;
 `;
 
 const HeroGeneral = styled.div`

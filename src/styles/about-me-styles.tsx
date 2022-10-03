@@ -2,15 +2,14 @@ import styled from 'styled-components';
 
 const AboutMeMainStyle = styled.div`
   width: 80%;
-  height: 100vh;
   justify-content: center;
   margin: 0 auto;
 
   &::before {
     content: '';
+    width: 30%;
     position: absolute;
-    width: 30em;
-    height: 30em;
+    height: 50%;
     border-radius: 50%;
     z-index: -1;
     background: #cbe4f4;

@@ -22,14 +22,12 @@ const HeroNavBarItems = styled.ul`
   font-weight: 300;
   font-size: calc(5px + (20 - 5) * ((100vw - 300px) / (1600 - 300)));
   display: flex;
+  justify-content: space-between;
 `;
 
 const HeroNavBarItem = styled.li`
-  text-align: center;
-  margin: auto;
   list-style-type: none;
   padding: 10px 20px;
-  width: 30%;
 `;
 
 const HeroGeneral = styled.div`
@@ -65,8 +63,14 @@ const Languages = styled.div`
 
 const HeroImageStyle = styled.div`
   width: 100%;
-  height: auto;
   z-index: -1;
+
+  @media screen and (min-width: 300px) {
+    /* For mobile phones: */
+    background-size: cover;
+    z-index: -2;
+    width: 100%;
+  }
 `;
 
 export {

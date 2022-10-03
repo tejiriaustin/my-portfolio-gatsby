@@ -34,7 +34,7 @@ const PortolioCardStyle = styled.div`
   place-items: center;
   font-weight: 400;
   color: #295165;
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 1.6rem;
   display: grid;
   background: linear-gradient(

@@ -4,11 +4,13 @@ const FooterSection = styled.div`
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  background-image: linear-gradient(#fff, #82b4ff);
+  height: 100vh;
+  background-image: linear-gradient(180deg, #fff 70%, #82b4ff 100%);
 `;
 
 const FooterHead = styled.div`
   text-align: center;
+  padding: 30px;
   font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 500;
   letter-spacing: 10px;
@@ -25,8 +27,8 @@ const FooterBody = styled.div`
 `;
 
 const FooterTextSection = styled.div`
+  place-items: center;
   width: 30%;
-  padding-top: 15vh;
   margin: 0 auto;
 `;
 

@@ -1,12 +1,28 @@
 import type { HeadFC } from 'gatsby';
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
+import PacmanLoader from 'react-spinners/PacmanLoader';
 import { AboutMe } from '../components/about-me';
 import { Footer } from '../components/footer';
 import { HeroPage } from '../components/hero-page';
 import { PortfolioCard } from '../components/portfolio-card';
 import { GlobalStyles } from '../global-Styles';
 
+const override = {
+  display: 'flex',
+  margin: '0 auto',
+  justifyContent: 'center',
+};
+
 const IndexPage = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
   return (
     <div>
       <meta
@@ -21,15 +37,26 @@ const IndexPage = () => {
         href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet"
       />
-      <GlobalStyles />
-      <HeroPage />
-      <AboutMe />
-      <PortfolioCard />
-      <Footer />
+      {loading ? (
+        <PacmanLoader
+          color={'#367fd6'}
+          size={50}
+          loading={loading}
+          cssOverride={override}
+        />
+      ) : (
+        <div>
+          <GlobalStyles />
+          <HeroPage />
+          <AboutMe />
+          <PortfolioCard />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Welcome</title>;
+export const Head: HeadFC = () => <title>Odiase Tejiri</title>;

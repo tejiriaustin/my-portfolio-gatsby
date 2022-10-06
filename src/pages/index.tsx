@@ -9,7 +9,7 @@ import { GlobalStyles } from '../global-Styles';
 
 const override = {
   TextAlign: 'center',
-  height: '100vh',
+  height: '80vh',
   width: '100%',
   display: 'flex',
   margin: '0 auto',
@@ -32,7 +32,7 @@ const IndexPage = () => {
       {loading ? (
         <HashLoader
           color={'#367fd6'}
-          size={50}
+          size={60}
           loading={loading}
           cssOverride={override}
         />

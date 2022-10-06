@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const AboutMeMainStyle = styled.div`
   width: 80%;
-  justify-content: center;
   margin: 0 auto;
+  height: 100vh;
 
   &::before {
     content: '';
@@ -32,15 +32,14 @@ const AboutMeParagraphOne = styled.p`
   font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
   width: 70%;
   text-align: left;
-  justify-content: flex-end;
 `;
 
 const AboutMeParagraphTwo = styled.p`
   font-weight: 400;
   width: 70%;
   font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
-  letter-spacing: 0.0625rem;
   text-align: right;
+  align-self: flex-end;
 `;
 
 const AboutMeParagraphTwoOuter = styled.div`

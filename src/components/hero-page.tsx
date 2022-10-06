@@ -64,7 +64,7 @@ const HeroPage = () => {
           <StaticImage
             src="../assets/images/hero-image.jpg"
             alt="A stuff"
-            sizes="(min-width: 300px) 500px,
+            sizes="(min-width: 768px) 500px,
             800vw"
             placeholder="blurred"
             width={500}

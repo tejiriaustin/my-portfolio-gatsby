@@ -1,8 +1,8 @@
-import { randomUUID } from 'crypto';
 import { StaticImage } from 'gatsby-plugin-image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React from 'react';
+import uuid from 'react-uuid';
 import {
   PortfolioHeaderStyle,
   PortfolioStyle,
@@ -17,8 +17,8 @@ const imagePaths = [
 ];
 
 const getRandomNumber = () => {
-  let min = 1000;
-  let max = 9999;
+  let min = 10;
+  let max = 300;
   return Math.round(Math.random() * (max - min) + min);
 };
 
@@ -43,7 +43,14 @@ const PortfolioCard = () => {
     <PortfolioStyle>
       <PortfolioHeaderStyle>PORTFOLIO & TECH STACK</PortfolioHeaderStyle>
       <PortolioCardStyle ref={portfolioCardRef}>
-        {imagePaths.map((path, index) => imageContainer(path, randomUUID()))}
+        {imagePaths.map((path, index) =>
+          imageContainer(
+            '../assets/images/18133.png',
+            uuid(),
+            getRandomNumber(),
+            getRandomNumber()
+          )
+        )}
         BACKEND
       </PortolioCardStyle>
     </PortfolioStyle>
@@ -51,7 +58,12 @@ const PortfolioCard = () => {
 };
 export { PortfolioCard };
 
-const imageContainer = (path: string, key: string, x = 20, y = 20) => {
+const imageContainer = (
+  path: string,
+  key: string,
+  x = 20,
+  y = 20
+): JSX.Element => {
   return (
     <div
       key={key}
@@ -59,12 +71,14 @@ const imageContainer = (path: string, key: string, x = 20, y = 20) => {
         position: 'absolute',
         top: y,
         left: x,
+        height: 40,
+        width: 40,
       }}
     >
       <StaticImage
-        src={path}
+        src="../assets/images/18133.png"
         alt="A stuff"
-        placeholder="tracedSVG"
+        placeholder="blurred"
         width={90}
       />
     </div>

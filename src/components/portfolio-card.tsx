@@ -18,6 +18,7 @@ const PortfolioCard = () => {
       },
       rotationX: 180,
       duration: 1,
+      scale: 0.5,
       delay: 0.2,
       ease: 'power2',
     });

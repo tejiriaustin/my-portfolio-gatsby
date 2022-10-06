@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
-import { gsap } from 'gsap';
-import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import React from 'react';
 import {
   Hero,
   HeroGeneral,
@@ -15,19 +15,39 @@ import {
 } from '../styles/hero-page-styles';
 
 const HeroPage = () => {
-  useEffect(() => {
-    gsap.timeline().from(HeroLogo, 0.5, {
+  const LogoRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    gsap.from(LogoRef.current, {
+      y: -200,
       duration: 1,
-      y: -100,
-      ease: 'Bouce',
+      ease: 'power2',
     });
   }, []);
 
+  const navBarRef = React.useRef<HTMLUListElement>(null);
+  React.useEffect(() => {
+    gsap.from(navBarRef.current, {
+      x: 500,
+      duration: 1,
+      ease: 'power1',
+      delay: 0.5,
+    });
+  });
+
+  const heroNameRef = React.useRef<HTMLParagraphElement>(null);
+  React.useEffect(() => {
+    gsap.from(heroNameRef.current, {
+      x: -1000,
+      duration: 1,
+      ease: 'power3',
+      delay: 0.5,
+    });
+  });
   return (
-    <Hero>
+    <Hero ref={LogoRef}>
       <HeroNavBar>
         <HeroLogo>Odiase Tejiri</HeroLogo>
-        <HeroNavBarItems>
+        <HeroNavBarItems ref={navBarRef}>
           <HeroNavBarItem>about me</HeroNavBarItem>
           <HeroNavBarItem>tech stack</HeroNavBarItem>
           <HeroNavBarItem>contact me</HeroNavBarItem>
@@ -35,7 +55,7 @@ const HeroPage = () => {
       </HeroNavBar>
 
       <HeroGeneral>
-        <HeroName>
+        <HeroName ref={heroNameRef}>
           ODIASE TEJIRI
           <HeroTitle>software engineer</HeroTitle>
           <Languages>GOLANG, FLUTTER</Languages>

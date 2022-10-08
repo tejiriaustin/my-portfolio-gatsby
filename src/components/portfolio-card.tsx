@@ -64,6 +64,13 @@ const imageContainer = (
   x = 20,
   y = 20
 ): JSX.Element => {
+  const imagePaths = [
+    '../assets/images/18133.png',
+    '../assets/images/heroku.png',
+    '../assets/images/heroku.png',
+    '../assets/images/Octicons-mark-github.svg',
+  ];
+
   return (
     <div
       key={key}
@@ -76,7 +83,7 @@ const imageContainer = (
       }}
     >
       <StaticImage
-        src="../assets/images/18133.png"
+        src={String(imagePaths[0])}
         alt="A stuff"
         placeholder="blurred"
         width={90}

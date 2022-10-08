@@ -7,8 +7,8 @@ const PortfolioStyle = styled.div`
   &::before {
     content: '';
     position: absolute;
-    width: 20em;
-    height: 20em;
+    width: 30em;
+    height: 30em;
     border-radius: 50%;
     z-index: -1;
     background: #cbe4f4;

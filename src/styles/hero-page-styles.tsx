@@ -63,7 +63,9 @@ const Languages = styled.div`
 
 const HeroImageStyle = styled.div`
   width: 100%;
+  right: 0;
   z-index: -1;
+  height: auto;
 
   @media screen and (min-width: 300px) {
     /* For mobile phones: */

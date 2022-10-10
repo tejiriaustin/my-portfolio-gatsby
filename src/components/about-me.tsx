@@ -11,12 +11,13 @@ import {
 
 const AboutMe = () => {
   gsap.registerPlugin(ScrollTrigger);
+
   const paragraphOneRef = React.useRef<HTMLParagraphElement>(null);
   React.useEffect(() => {
     gsap.from(paragraphOneRef.current, {
       scrollTrigger: {
         trigger: paragraphOneRef.current,
-        toggleActions: 'restart none none reverse',
+        toggleActions: 'restart none none none',
       },
       x: -300,
       duration: 1,
@@ -29,7 +30,7 @@ const AboutMe = () => {
     gsap.from(paragraphTwoRef.current, {
       scrollTrigger: {
         trigger: paragraphOneRef.current,
-        toggleActions: 'restart none none reverse',
+        toggleActions: 'restart none none none',
       },
       x: 300,
       duration: 1,

@@ -43,14 +43,55 @@ const HeroPage = () => {
       delay: 0.5,
     });
   });
+
+  const allRefs = React.useRef<Array<HTMLLIElement | null>>([]);
+  React.useEffect(() => {
+    let currentRefs = allRefs.current as gsap.TweenTarget;
+
+    gsap.defaults({ ease: 'power3.out' });
+
+    let tl1 = gsap.timeline();
+
+    tl1.from(
+      currentRefs,
+      1,
+      {
+        delay: 0.3,
+        duration: 0.5,
+        autoAlpha: 0,
+        y: 50,
+      },
+      0.4
+    );
+    return () => {};
+  }, []);
+
   return (
     <Hero ref={LogoRef}>
       <HeroNavBar>
         <HeroLogo>Odiase Tejiri</HeroLogo>
-        <HeroNavBarItems ref={navBarRef}>
-          <HeroNavBarItem>about me</HeroNavBarItem>
-          <HeroNavBarItem>tech stack</HeroNavBarItem>
-          <HeroNavBarItem>contact me</HeroNavBarItem>
+        <HeroNavBarItems>
+          <HeroNavBarItem
+            ref={(element) => {
+              allRefs.current[0] = element;
+            }}
+          >
+            about me
+          </HeroNavBarItem>
+          <HeroNavBarItem
+            ref={(element) => {
+              allRefs.current[1] = element;
+            }}
+          >
+            tech stack
+          </HeroNavBarItem>
+          <HeroNavBarItem
+            ref={(element) => {
+              allRefs.current[2] = element;
+            }}
+          >
+            contact me
+          </HeroNavBarItem>
         </HeroNavBarItems>
       </HeroNavBar>
 

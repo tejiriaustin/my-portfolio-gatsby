@@ -1,6 +1,6 @@
 import type { HeadFC } from 'gatsby';
 import React, { useEffect, useState } from 'react';
-import HashLoader from 'react-spinners/HashLoader';
+import { HashLoader } from 'react-spinners';
 import { AboutMe } from '../components/about-me';
 import { Footer } from '../components/footer';
 import { HeroPage } from '../components/hero-page';
@@ -18,10 +18,9 @@ const override = {
 };
 
 const IndexPage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 5000);
@@ -29,34 +28,36 @@ const IndexPage = () => {
 
   return (
     <div>
-      {loading ? (
-        <HashLoader
-          color={'#367fd6'}
-          size={60}
-          loading={loading}
-          cssOverride={override}
+      <div>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
         />
-      ) : (
-        <div>
-          <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="HandheldFriendly" content="true" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+        <GlobalStyles />
+        {loading ? (
+          <HashLoader
+            color={'#367fd6'}
+            size={60}
+            loading={loading}
+            cssOverride={override}
           />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-          <meta name="HandheldFriendly" content="true" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-          />
-          <GlobalStyles />
-          <HeroPage />
-          <AboutMe />
-          <PortfolioCard />
-          <Footer />
-        </div>
-      )}
+        ) : (
+          <>
+            <HeroPage />
+            <AboutMe />
+            <PortfolioCard />
+            <Footer />
+          </>
+        )}
+      </div>
     </div>
   );
 };

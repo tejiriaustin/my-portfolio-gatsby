@@ -1,20 +1,15 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React from 'react';
-import uuid from 'react-uuid';
 import {
   PortfolioHeaderStyle,
   PortfolioStyle,
   PortolioCardStyle,
 } from '../styles/portfolio-card-style';
-
-const imagePaths = [
-  '../assets/images/18133.png',
-  '../assets/images/heroku.png',
-  '../assets/images/heroku.png',
-  '../assets/images/Octicons-mark-github.svg',
-];
+import { GitIcon } from './icons/git';
+import { HerokuIcon } from './icons/heroku';
+import { Octicons } from './icons/octicons';
+import { ImageContainer } from './stack-icons';
 
 const getRandomNumber = () => {
   let min = 10;
@@ -43,51 +38,17 @@ const PortfolioCard = () => {
     <PortfolioStyle>
       <PortfolioHeaderStyle>PORTFOLIO & TECH STACK</PortfolioHeaderStyle>
       <PortolioCardStyle ref={portfolioCardRef}>
-        {imagePaths.map((path, index) =>
-          imageContainer(
-            '../assets/images/18133.png',
-            uuid(),
-            getRandomNumber(),
-            getRandomNumber()
-          )
-        )}
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <>
+            <GitIcon />
+            <HerokuIcon />
+            <HerokuIcon />
+            <Octicons />
+          </>
+        </ImageContainer>
         BACKEND
       </PortolioCardStyle>
     </PortfolioStyle>
   );
 };
 export { PortfolioCard };
-
-const imageContainer = (
-  path: string,
-  key: string,
-  x = 20,
-  y = 20
-): JSX.Element => {
-  const imagePaths = [
-    '../assets/images/18133.png',
-    '../assets/images/heroku.png',
-    '../assets/images/heroku.png',
-    '../assets/images/Octicons-mark-github.svg',
-  ];
-
-  return (
-    <div
-      key={key}
-      style={{
-        position: 'absolute',
-        top: y,
-        left: x,
-        height: 40,
-        width: 40,
-      }}
-    >
-      <StaticImage
-        src={String(imagePaths[0])}
-        alt="A stuff"
-        placeholder="blurred"
-        width={90}
-      />
-    </div>
-  );
-};

@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <FooterSection>
+    <FooterSection id="contact-me">
       <FooterHead>CONTACT ME</FooterHead>
       <FooterBody>
         <FooterBodyTop>
@@ -30,8 +30,12 @@ const Footer = () => {
             />
           </FooterImageSection>
         </FooterBodyTop>
-        <a>
-          <FooterBodyBottom>tejiriaustin123@gmail.com</FooterBodyBottom>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tejiriaustin123@gmail.com">
+          <FooterBodyBottom>
+            <a href="mailto:tejiriaustin123@gmail.com">
+              tejiriaustin123@gmail.com
+            </a>
+          </FooterBodyBottom>
         </a>
       </FooterBody>
     </FooterSection>

@@ -6,11 +6,13 @@ import {
   PortfolioStyle,
   PortolioCardStyle,
 } from '../styles/portfolio-card-style';
+import { AWSIcon } from './icons/aws-icon';
 import { GitIcon } from './icons/git';
+import { GraphqlIcon } from './icons/graphql-icon';
 import { HerokuIcon } from './icons/heroku';
 import { OctaCatIcons } from './icons/octicons';
+import { PostgresIcon } from './icons/postrgres-icon';
 import { ImageContainer } from './stack-icons';
-import {GraphqlIcon} from "./icons/graphql-icon";
 
 const getRandomNumber = () => {
   let min = 10;
@@ -36,23 +38,27 @@ const PortfolioCard = () => {
   }, []);
 
   return (
-    <PortfolioStyle>
+    <PortfolioStyle id="tech-stack">
       <PortfolioHeaderStyle>PORTFOLIO & TECH STACK</PortfolioHeaderStyle>
       <PortolioCardStyle ref={portfolioCardRef}>
         <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
-          <>
-            <OctaCatIcons />
-          </>
+          <OctaCatIcons />
         </ImageContainer>
         <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
-          <>
-            <GitIcon />
-          </>
+          <GitIcon />
         </ImageContainer>
         <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
           <GraphqlIcon />
         </ImageContainer>
-
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <HerokuIcon />
+        </ImageContainer>
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <PostgresIcon />
+        </ImageContainer>
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <AWSIcon />
+        </ImageContainer>
         BACKEND
       </PortolioCardStyle>
     </PortfolioStyle>

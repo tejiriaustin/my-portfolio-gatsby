@@ -76,21 +76,33 @@ const HeroPage = () => {
               allRefs.current[0] = element;
             }}
           >
-            about me
+            <a href="#about-me">about me</a>
           </HeroNavBarItem>
           <HeroNavBarItem
             ref={(element) => {
               allRefs.current[1] = element;
             }}
           >
-            tech stack
+            <a href="#tech-stack">tech stack</a>
           </HeroNavBarItem>
           <HeroNavBarItem
             ref={(element) => {
               allRefs.current[2] = element;
             }}
           >
-            contact me
+            <a href="#contact-me">contact me</a>
+          </HeroNavBarItem>
+          <HeroNavBarItem
+            ref={(element) => {
+              allRefs.current[3] = element;
+            }}
+          >
+            <a
+              href="https://docs.google.com/document/d/1f7GPHCq5w-Fr1TiPYsVcOD3arKIyHWeIS2Ly1KLC7gI/edit?usp=sharing"
+              target="_blank"
+            >
+              my resume
+            </a>
           </HeroNavBarItem>
         </HeroNavBarItems>
       </HeroNavBar>

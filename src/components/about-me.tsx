@@ -39,7 +39,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <AboutMeMainStyle>
+    <AboutMeMainStyle id="about-me">
       <AboutMeHeader>ABOUT ME</AboutMeHeader>
       <AboutMeParagraphOne ref={paragraphOneRef}>
         An engineer interested in building solutions to problems in a pragmatic

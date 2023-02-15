@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import { Icon } from './types';
 
-export const OctaCatIcons = ({ width = 90 }): Icon => (
+export const OctaCatIcons = (): Icon => (
   <>
     <StaticImage
       src="../assets/images/Octicons-mark-github.svg"

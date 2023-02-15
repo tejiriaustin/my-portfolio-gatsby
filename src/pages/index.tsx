@@ -1,11 +1,11 @@
 import type { HeadFC } from 'gatsby';
-import React, { useEffect, useState } from 'react';
-import { HashLoader } from 'react-spinners';
+import { gsap } from 'gsap';
+import React from 'react';
 import { AboutMe } from '../components/about-me';
 import { Footer } from '../components/footer';
 import { HeroPage } from '../components/hero-page';
 import { PortfolioCard } from '../components/portfolio-card';
-import { GlobalStyles } from '../global-Styles';
+import { GlobalOpacity, GlobalStyles } from '../global-Styles';
 
 const override = {
   TextAlign: 'center',
@@ -17,13 +17,15 @@ const override = {
   alignItems: 'center',
 };
 
-const IndexPage = () => {
-  const [loading, setLoading] = useState(true);
+const Global2 = {};
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+const IndexPage = () => {
+  const globalOpacityRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    gsap.from(globalOpacityRef.current, {
+      opacity: 0,
+      duration: 0.2,
+    });
   }, []);
 
   return (
@@ -42,21 +44,14 @@ const IndexPage = () => {
           rel="stylesheet"
         />
         <GlobalStyles />
-        {loading ? (
-          <HashLoader
-            color={'#367fd6'}
-            size={60}
-            loading={loading}
-            cssOverride={override}
-          />
-        ) : (
-          <>
+        {
+          <GlobalOpacity ref={globalOpacityRef}>
             <HeroPage />
             <AboutMe />
             <PortfolioCard />
             <Footer />
-          </>
-        )}
+          </GlobalOpacity>
+        }
       </div>
     </div>
   );

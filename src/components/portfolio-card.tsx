@@ -8,8 +8,9 @@ import {
 } from '../styles/portfolio-card-style';
 import { GitIcon } from './icons/git';
 import { HerokuIcon } from './icons/heroku';
-import { Octicons } from './icons/octicons';
+import { OctaCatIcons } from './icons/octicons';
 import { ImageContainer } from './stack-icons';
+import {GraphqlIcon} from "./icons/graphql-icon";
 
 const getRandomNumber = () => {
   let min = 10;
@@ -40,12 +41,18 @@ const PortfolioCard = () => {
       <PortolioCardStyle ref={portfolioCardRef}>
         <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
           <>
-            <GitIcon />
-            <HerokuIcon />
-            <HerokuIcon />
-            <Octicons />
+            <OctaCatIcons />
           </>
         </ImageContainer>
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <>
+            <GitIcon />
+          </>
+        </ImageContainer>
+        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+          <GraphqlIcon />
+        </ImageContainer>
+
         BACKEND
       </PortolioCardStyle>
     </PortfolioStyle>

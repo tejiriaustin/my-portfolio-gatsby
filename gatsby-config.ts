@@ -5,15 +5,29 @@ const config: GatsbyConfig = {
     title: `my-portfolio-gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
+
   graphqlTypegen: true,
   plugins: [
+<<<<<<< HEAD
     `gatsby-plugin-sass`,
   `gatsby-plugin-styled-components`,
 ],
 
+=======
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
+  ],
+>>>>>>> ed110855c9f6126e635774dca62cf88aa38a6a73
 };
 
 export default config;

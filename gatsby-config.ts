@@ -8,12 +8,6 @@ const config: GatsbyConfig = {
 
   graphqlTypegen: true,
   plugins: [
-<<<<<<< HEAD
-    `gatsby-plugin-sass`,
-  `gatsby-plugin-styled-components`,
-],
-
-=======
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -27,7 +21,6 @@ const config: GatsbyConfig = {
       },
     },
   ],
->>>>>>> ed110855c9f6126e635774dca62cf88aa38a6a73
 };
 
 export default config;

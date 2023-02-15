@@ -22,7 +22,7 @@ const AboutMeHeader = styled.p`
   padding-top: 5%;
   font-weight: 700;
   letter-spacing: 15px;
-  font-size: calc(15px + (27 - 15) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
   color: #295165;
   margin-bottom: 10vh;
 `;

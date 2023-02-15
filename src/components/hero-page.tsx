@@ -52,14 +52,14 @@ const HeroPage = () => {
 
     let tl1 = gsap.timeline();
 
-    tl1.from(
+    tl1.staggerFrom(
       currentRefs,
       1,
       {
         delay: 0.3,
-        duration: 0.5,
+        duration: 1,
         autoAlpha: 0,
-        y: 50,
+        y: -50,
       },
       0.4
     );

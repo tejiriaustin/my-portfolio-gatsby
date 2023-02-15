@@ -17,7 +17,7 @@ const AboutMe = () => {
     gsap.from(paragraphOneRef.current, {
       scrollTrigger: {
         trigger: paragraphOneRef.current,
-        toggleActions: 'restart none none none',
+        // toggleActions: 'restart none none none',
       },
       x: -300,
       duration: 1,
@@ -30,7 +30,7 @@ const AboutMe = () => {
     gsap.from(paragraphTwoRef.current, {
       scrollTrigger: {
         trigger: paragraphOneRef.current,
-        toggleActions: 'restart none none none',
+        // toggleActions: 'restart none none none',
       },
       x: 300,
       duration: 1,

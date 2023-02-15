@@ -30,7 +30,9 @@ const Footer = () => {
             />
           </FooterImageSection>
         </FooterBodyTop>
-        <FooterBodyBottom>tejiriaustin123@gmail.com</FooterBodyBottom>
+        <a>
+          <FooterBodyBottom>tejiriaustin123@gmail.com</FooterBodyBottom>
+        </a>
       </FooterBody>
     </FooterSection>
   );

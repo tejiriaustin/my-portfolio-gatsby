@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     html{
@@ -10,3 +10,5 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
 `;
+
+export const GlobalOpacity = styled.div``;

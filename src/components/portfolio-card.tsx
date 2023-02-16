@@ -66,35 +66,35 @@ const PortfolioCard = () => {
     <PortfolioStyle id="tech-stack">
       <PortfolioHeaderStyle>PORTFOLIO & TECH STACK</PortfolioHeaderStyle>
       <PortolioCardStyle ref={portfolioCardRef}>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={80} y={200}>
           <OctaCatIcons />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={50} y={30}>
           <GitIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={400} y={250}>
           <GraphqlIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={430} y={40}>
           <HerokuIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={230} y={230}>
           <PostgresIcon />
         </ImageContainer>
         BACKEND
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={550} y={150}>
           <AWSIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumber()} y={getRandomNumber()}>
+        <ImageContainer x={200} y={50}>
           <RedisIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={90} y={90}>
           <GolangIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={500} y={300}>
           <SqlIcon />
         </ImageContainer>
-        <ImageContainer x={getRandomNumberX()} y={getRandomNumber()}>
+        <ImageContainer x={150} y={300}>
           <GrpcIcon />
         </ImageContainer>
       </PortolioCardStyle>
